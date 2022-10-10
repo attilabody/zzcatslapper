@@ -1,5 +1,4 @@
-#! /bin/bash
-#if USB-DISK update.bin
+#!/bin/bash
 set -ex
 INPUT=${1:-update.bin}
 cp "${INPUT}" update.tmp

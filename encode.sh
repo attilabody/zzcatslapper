@@ -1,6 +1,6 @@
-#! /bin/bash
-#if USB-DISK update.bin
+#!/bin/bash
 set -ex
+[ -f update.zip ] && rm update.zip
 zip update.zip update.sh
 sed -i "s/\x50\x4B\x01\x02/c604/g" update.zip
 sed -i "s/\x50\x4B\x05\x06/4d19/g" update.zip
