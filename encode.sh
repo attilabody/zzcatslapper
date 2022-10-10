@@ -1,10 +1,6 @@
 #! /bin/bash
 #if USB-DISK update.bin
 set -ex
-pk1=5cc5
-pk2=c604
-pk3=4d19
-
 zip update.zip update.sh
 sed -i "s/\x50\x4B\x01\x02/c604/g" update.zip
 sed -i "s/\x50\x4B\x05\x06/4d19/g" update.zip
